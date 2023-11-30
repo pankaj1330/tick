@@ -1,0 +1,827 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 550;
+}
+
+body {
+    /* background-color: #fdf2f2; */
+    background-color: #fff6f6;
+    min-height: 100vh;
+    color: #252525;
+}
+.logo-link {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-link:hover {
+    color: black;
+}
+/* -------------
+slide show
+-----------------  */
+
+.slide-show,
+#carouselExampleDark {
+    height: 280px;
+    width: 460px;
+    cursor: pointer;
+}
+
+.slide-index {
+    position: absolute;
+    top: 22rem;
+}
+
+.slide-show .carousel-inner .carousel-item img {
+    height: 280px;
+    width: 460px;
+    transition: all 1s;
+}
+
+/* end of slide show  */
+
+/* ---------------------- 
+navbar design 
+for big screen
+----------------------- */
+
+.navigation-bar {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    top: 0;
+    font-weight: bold;
+    z-index: 2;
+}
+.navigation-bar .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+.navbar .logo h2 {
+    font-size: 2.6rem;
+    font-weight: bolder;
+}
+
+.navbar .navlist {
+    display: flex;
+    gap: 2rem;
+    z-index: 3;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.navbar .navlist .navitem a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .navlist .navitem a:hover {
+    color: red;
+}
+
+.fa-bars,
+.fa-xmark {
+    position: absolute;
+    padding: .3rem;
+    top: .7rem;
+    right: 1.2rem;
+    font-size: 1.5rem;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#number a {
+    background-color: #ff9933;
+    padding: .3rem .4rem;
+    border-radius: .6rem;
+    line-height: 2rem;
+    font-size: .9rem;
+    margin: 0;
+    transition: all .4s;
+}
+
+#number a:hover {
+    color: rgb(3, 60, 4);
+    background-color: white;
+    transition: all .4s;
+}
+
+.slidebar {
+    transform: translateX(-230px);
+    transition: all .4s;
+}
+
+/* ---------
+navbar ends
+--------------  */
+
+/* ---------------
+hero section after navbar
+------------------  */
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 .5rem;
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 10rem;
+    min-height: 40vh;
+}
+
+.hero h1:nth-child(1) {
+    font-size: 3.5rem;
+}
+
+.hero .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.hero-content2 {
+    width: 400px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.hero-content2 h2 {
+    font-size: 2.3rem;
+    display: inline;
+}
+
+#heading {
+    font-size: 2.1rem;
+    text-align: center;
+    margin: 5rem 0;
+    margin-bottom: 3rem;
+}
+
+/*--------------
+ hero section ends 
+------------------------ */
+
+/*--------------
+ Services at a glance section or PRICING SECTION
+------------------------ */
+
+#pricing-heading {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pricing {
+    margin-top: 3rem;
+    padding: 2rem .5rem;
+    background-image: url('./images/service-min.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pricing h1 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.pricing .options {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.disc {
+    text-align: justify;
+}
+
+.tabs {
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
+    padding: .3rem .8rem;
+    margin: 0 1rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.tabs:hover {
+    background-color: orangered;
+    color: white;
+    transition: all .3s;
+}
+
+/*---------------------------
+ dynamic different categories section 
+registration
+gst returns 
+gst annual returns
+final returns
+--------------------------- */
+
+.detail h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    height: 150px;
+}
+
+.detail p {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.details {
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    max-width: 1100px;
+}
+
+.detail h1 {
+    font-size: 3rem;
+    background-color: rgb(226, 238, 253);
+    display: inline;
+    border-radius: 1.5rem/1rem;
+    padding: 1rem 1.3rem;
+    font-weight: bold;
+    font-weight: 700;
+    color: black;
+}
+
+.details .detail {
+    width: 250px;
+    text-align: center;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    color: black;
+    letter-spacing: 1px;
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+.detail .price sup {
+    font-size: 1.8rem;
+    margin-right: .3rem;
+}
+
+.detail:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+}
+
+/*---------------------
+ why we section 
+why our customer loves us 
+---------------------*/
+
+.why-we {
+    padding: 0 .5rem;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.why-count {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    gap: 5rem;
+}
+
+.why {
+    width: 320px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(6, 6, 78);
+}
+
+.why h3 {
+    margin: 1rem 0;
+}
+
+.why i {
+    font-size: 2rem;
+}
+
+.why-we h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0;
+    text-decoration: underline;
+}
+
+/*--------------------
+ footer section 
+---------------------- */
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    line-height: 1.5rem;
+}
+
+.quick-links a {
+    color: aliceblue;
+}
+
+.quick-links h2 {
+    font-style: italic;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    margin-top: 2rem;
+    padding: 2rem 0;
+    background-color: #252525;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+.footer footer {
+    display: flex;
+    max-width: 1800px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.kgtax-address h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+/*-------------------
+ needs section
+--------------------- */
+
+#needs-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.needs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    row-gap: 4rem;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem .5rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.need {
+    text-align: center;
+    width: 15%;
+    color: white;
+    height: 12rem;
+}
+
+.needs .need i {
+    font-size: 2.2rem;
+    padding: .5rem;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.need h1 {
+    font-weight: lighter;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.needs .need i:hover {
+    box-shadow: 5px 5px 10px rgb(45, 45, 45);
+    transform: translateY(-.5rem);
+    transition: all 1s;
+}
+
+.needs-width-cover {
+    margin-top: 3rem;
+    background-image: url('./images/laptop-min.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0rem .5rem;
+}
+
+/*------------------------
+ whats app connection
+-------------------------- */
+
+#whatsapp i {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    color: white;
+    background-color: green;
+    padding: .2rem .3rem;
+    border-radius: .4rem;
+    z-index: 2;
+}
+
+/*-------------------
+registration page styling
+-------------------- */
+
+.main-section {
+    display: flex;
+    padding: 0 .5rem;
+    margin: auto;
+    margin-top: 9rem;
+    max-width: 1300px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 22%;
+    text-align: center;
+    color: blue;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 2px grey;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+}
+
+.card iframe,.card-header iframe {
+    border: none;
+    width: 100%;
+    height: 300px;
+}
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-header .card-img{
+    max-width: 40%;
+}
+.card-img img {
+    width: 100%;
+    height: 300px;
+}
+.cards .reg-video,.card-header .reg-video2{
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    max-width: 38%;
+    width: 38%;
+}
+
+
+.card .reg-price {
+    font-size: 2rem;
+    color: red;
+    position: absolute;
+    bottom: .3rem;
+    font-weight: bolder;
+}
+.card .reg-price span{
+    text-decoration: line-through;
+    font-size: 1.3rem;
+    color: grey;
+    font-weight: 500;
+}
+
+.card h1,.card p {
+    margin: .3rem 0;
+    padding: 0 .4rem;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.card h1{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.reg-heading {
+    color: black;
+    font-weight: 800 !important;
+}
+
+.reg-video h1,.reg-video2 h1 {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-top: 5rem;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    transition: all .3s;
+}
+
+.reg-video:hover,.reg-video2:hover {
+    transform: none;
+}
+
+.income-cards{
+    justify-content: normal;
+}
+
+
+/*--------------------------------
+media queries for smaller screen size 
+---------------------------------- */
+
+@media only screen and (min-width:1500px) {
+    .navigation-bar {
+        font-size: .9rem;
+    }
+    .slide-index {
+        top: 18rem;
+    }
+}
+
+@media only screen and (max-width:1550px) {
+    html {
+        font-size: 14px;
+    }
+    .slide-index {
+        top: 20rem;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .navbar {
+        font-size: 1rem;
+    }
+    html {
+        font-size: 13px;
+    }
+    .registration-sticky-container iframe {
+        width: 400px;
+        height: 250px;
+    }
+    .slide-index {
+        top: 22rem;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+    .hero-content2 {
+        width: 90vw;
+    }
+    .navbar {
+        letter-spacing: normal;
+    }
+    .needs .need i {
+        font-size: 2.8rem;
+        padding: .5rem;
+        height: 80px;
+        width: 80px;
+    }
+    .needs {
+        gap: 5rem;
+    }
+    .need h1 {
+        font-size: 1rem;
+    }
+    .card iframe,.card-header iframe {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .navbar .navlist {
+        flex-direction: column;
+        line-height: normal;
+        background-color: white;
+        padding-top: 3.3rem;
+        height: 100vh;
+        padding-left: 1rem;
+        width: 230px;
+        position: fixed;
+        top: 0;
+        right: -230px;
+        transition: all .4s;
+        overflow: scroll;
+        align-items: flex-start;
+    }
+    .navigation-bar {
+        padding-top: .3rem;
+    }
+    .slide-show .carousel-inner .carousel-item img,
+    #carouselExampleDark {
+        height: 250px;
+        max-width: 360px;
+        margin: auto;
+    }
+    .fa-bars,
+    .fa-xmark {
+        visibility: visible;
+    }
+    .hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .needs .need i {
+        font-size: 2.4rem;
+        padding: .5rem;
+        height: 60px;
+        width: 60px;
+    }
+    .need {
+        width: 20%;
+    }
+    .slide-index {
+        top: 19rem;
+    }
+    .card iframe,.card-header iframe {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .reg-video,
+    .registration-page-videos {
+        display: none;
+    }
+    .cards {
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .card {
+        max-width: 30%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .card{
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .hero-content h1 {
+        display: inline;
+    }
+    .hero {
+        justify-content: center;
+    }
+    .hero-content {
+        margin-bottom: 1rem;
+    }
+    .hero .slide-show .carousel-inner .carousel-item img {
+        width: 90vw;
+        max-height: 220px;
+    }
+    .footer {
+        font-size: .8rem;
+    }
+    .main-section {
+        gap: 1rem;
+    }
+    .card{
+        max-width: 40%;
+    }
+    .slide-index {
+        top: 17rem;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .footer footer {
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+    .quick-links h2 {
+        margin-top: 1.5rem;
+    }
+    .contact h2 {
+        margin-top: 1.5rem;
+    }
+    .hero .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .needs .need i {
+        font-size: 1.8rem;
+        padding: .5rem;
+        height: 50px;
+        width: 50px;
+    }
+    .need {
+        width: 90px;
+    }
+    .need h1 {
+        font-size: 1rem;
+    }
+    .needs {
+        gap: 1rem;
+    }
+    .slide-show .carousel-inner .carousel-item img,
+    #carouselExampleDark {
+        margin-top: 1rem;
+        max-width: 80vw;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .reg-video2,.card-header {
+        display: none;
+    }
+    .card{
+        max-width: 60%;
+    }
+    .details .detail {
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .card{
+        max-width: 70%;
+        font-size: .8rem;
+    }
+    .card img{
+        height: 200px;
+    }
+    .card .reg-price{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .needs .need i {
+        font-size: 1.5rem;
+        padding: .5rem;
+        height: 40px;
+        width: 40px;
+    }
+    .need {
+        width: 60px;
+    }
+    .hero .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .card {
+        max-width: 90%;
+        font-size: .8rem;
+    }
+    .card img {
+        height: 150px;
+    }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kgtax.in</title>
+
+
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- css connection -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- navbar  -->
+    <section class="navigation-bar">
+        <nav class="navbar">
+            <div class="logo" style="padding-top:7px">
+                <a href="./index.html" class="logo-link">
+                    <h2 style="font-family: 'Source Sans Pro',sans-serif;">KG<span style="color: #ff9933;">TAX</span>
+                    </h2>
+                </a>
+            </div>
+            <ul class="navlist" id="nav" style="font-family: 'Source Sans Pro',sans-serif;margin-bottom: 0;">
+                <i class="fa-solid fa-xmark" onclick="hide()"></i>
+                <li class="navitem"> <a href="./index.html">Home</a> </li>
+                <li class="navitem"> <a href="./registration.html">Registrations</a> </li>
+                <li class="navitem"> <a href="./dsc.html">DSC Class-3(Digital Signature)</a> </li>
+                <li class="navitem"> <a href="./income.html">Income Tax</a> </li>
+                <li class="navitem"> <a href="./services.html">Goods and Services</a> </li>
+                <li class="navitem"> <a href="./import-Export.html">Import & Export</a> </li>
+                <li class="navitem" id="number">
+                    <a href="tel:+919999761170"><i class="fa-solid fa-phone"></i> 9999761170 </a> <br>
+                    <a href="tel:+917500451146"><i class="fa-solid fa-phone"></i> 7500451146</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="menubar()" style="top:1.2rem;"></i>
+    </section>
+
+    <a href="https://wa.me/919999761170" id="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a>
+
+
+    <!-- hero section after navbar  -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to</h1>
+            <h1>KG<span style="color: #ff9933;">TAX</span></h1>
+        </div>
+
+        <!-- -------------
+        slideshow in bootstrap
+        -------------- -->
+
+        <div class="slide-show">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators slide-index" style="z-index: 1;">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slider/slide2-min.jpeg" class="d-block w-100" alt="slide-show">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slider/slide3-min.jpeg" class="d-block w-100" alt="slide-show">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slider/slide4-min.jpeg" class="d-block w-100" alt="slide-show">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slider/slide5-min.jpeg" class="d-block w-100" alt="slide-show">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slider/slide6-min.jpeg" class="d-block w-100" alt="slide-show">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slider/slide7-min.jpg" class="d-block w-100" alt="slide-show">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-content2">
+            <p>
+            <h2>KG<span style="color: #ff9933;">TAX</span></h2> is India's one of the best Legal services platform
+            dedicated to helping Entrepreneurs easily start and grow their business, at reasonable cost. we are
+            providing Legal and Taxation services
+            since 2011.</p>
+        </div>
+    </section>
+
+    <h1 id="heading">We already served more than 50000 services since incorporation</h1>
+
+    <hr style="height:4px;background-color:black;">
+
+    <!-- services and pricing section -->
+    <h1 id="pricing-heading">Services at a Glance</h1>
+    <section class="pricing">
+        <div class="options">
+            <button class="registration tabs" type="button" onclick="registration()">Registrations</button>
+            <button class="dsc-sign tabs" type="button" onclick="dsc()">DSC Class-3(Digital signature)</button>
+            <button class="income-tax tabs" type="button" onclick="incometax()">Income Tax Returns</button>
+            <button class="services-tax tabs" type="button" onclick="servicetax()">Goods and Services Tax</button>
+        </div>
+        <div class="details">
+            <!-- content displayed dynamically -->
+        </div>
+    </section>
+
+
+    <!-- all bussiness needs -->
+
+    <h1 id="needs-heading">One Stop For All Business Needs</h1>
+    <section class="needs-width-cover">
+        <section class="needs">
+            <div class="need">
+                <i class="fa-solid fa-pen-nib" style="background-color:rgb(102, 67, 214)"></i>
+                <h1>DSC CLASS-3 (DIGITAL SIGNATURE)</h1>
+            </div>
+            <div class="need">
+                <i class="fa-regular fa-file-lines" style="background-color:orangered"></i>
+                <h1>GST REGISTRATION</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-building" style="background-color:rgb(94, 98, 232)"></i>
+                <h1>COMPANY REGISTRATION</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-trademark" style="background-color:green"></i>
+                <h1>TRADEMARK REGISTRATION</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-utensils" style="background-color:rgb(231, 76, 19)"></i>
+                <h1>FSSAI FOOD LICENSE</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-download" style="background-color:rgb(60, 60, 192)"></i>
+                <h1>IMPORT EXPORT CODE</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-file-excel" style="background-color:blue"></i>
+                <h1>GST RETURN</h1>
+            </div>
+            <div class="need">
+                <i class="fa-regular fa-pen-to-square" style="background-color:rgb(122, 183, 30)"></i>
+                <h1>TDS RETURN</h1>
+            </div>
+            <div class="need">
+                <i class="fa-solid fa-indian-rupee-sign" style="background-color:orange"></i>
+                <h1>INCOME TAX RETURN</h1>
+            </div>
+            <div class="need">
+                <i class="fa-regular fa-building" style="background-color:red"></i>
+                <h1>MSME/UDYAM REGISTRATION</h1>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- why we / why our customers loves us -->
+
+    <section class="why-we">
+        <h1>Why Our Customers Love Us</h1>
+        <div class="why-count">
+            <div class="why">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <h3>Affordable</h3>
+                <p>Our dedicated experts provide the best in class services at the most affordable rates</p>
+            </div>
+            <div class="why">
+                <i class="fa-regular fa-clock"></i>
+                <h3>Ontime</h3>
+                <p>We take precautionary measures to ensure that our clients never miss a single deadline</p>
+            </div>
+            <div class="why">
+                <i class="fa-solid fa-gavel"></i>
+                <h3>Compliance ensured</h3>
+                <p>We ensure that our client always stays compliant with all applicable laws and regulations</p>
+            </div>
+            <div class="why">
+                <i class="fa-regular fa-comment-dots"></i>
+                <h3>Instance responce</h3>
+                <p>Get instant responses to all your queries within a few minutes</p>
+            </div>
+            <div class="why">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <h3>Simplified Process</h3>
+                <p>Our process is extremely simplified because our dedicated experts handhold you throughout each
+                    process </p>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+
+
+    <!-- footer  -->
+
+    <section class="footer">
+        <footer>
+            <div class="kgtax-address">
+                <h1>KG TAX</h1>
+                <h2>OFFICE ADDRESS</h2>
+                <address>
+                    WZ-40, SHASTRI NAGAR, <br>
+                    Delhi-110052
+                </address>
+            </div>
+            <div class="quick-links">
+                <h2>Quick links</h2>
+                <a href="./index.html">Home</a>
+                <a href="./registration.html">Registration</a>
+                <a href="./dsc.html">DSC (DIGITAL SIGNATURE)</a>
+                <a href="./income.html">INCOME TAX</a>
+                <a href="./services.html">GOODS AND SERVICE TAX</a>
+                <a href="./import-Export.html">Import & Export</a>
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <p style="margin: 0;">+91 9999761170</p>
+                <p>+91 7500451146</p>
+                <div class="email">
+                    <h2>E-mail</h2>
+                    <i>care@kgtax.in</i>
+                </div>
+            </div>
+
+
+        </footer>
+    </section>
+
+    <!-- javascript link -->
+    <script src="index.js"></script>
+</body>
+
+</html>
