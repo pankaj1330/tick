@@ -488,7 +488,8 @@ registration page styling
 }
 
 .card {
-    max-width: 22%;
+    /* max-width: 22%; */
+    max-width: calc(25% - 1.5rem);
     text-align: center;
     color: blue;
     background-color: rgb(255, 255, 255);
@@ -512,13 +513,15 @@ registration page styling
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 3rem;
 }
 .card-header .card-img{
-    max-width: 40%;
+    max-width: 60%;
 }
 .card-img img {
     width: 100%;
     height: 300px;
+    border-radius: 8px;
 }
 .cards .reg-video,.card-header .reg-video2{
     border: none;
@@ -548,7 +551,7 @@ registration page styling
     padding: 0 .4rem;
     text-align: justify;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .card h1{
     font-weight: bold;
@@ -780,8 +783,14 @@ media queries for smaller screen size
 }
 
 @media only screen and (max-width:600px) {
-    .reg-video2,.card-header {
+    /* .reg-video2,.card-header {
         display: none;
+    } */
+    .card-header .card-img{
+        max-width: 96%;
+    }
+    .card-img img {
+        height: 240px;
     }
     .card{
         max-width: 60%;
