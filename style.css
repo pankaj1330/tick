@@ -569,7 +569,7 @@ registration page styling
     margin-top: 5rem;
 }
 
-.card:hover {
+.card:hover,.card-header .card-img:hover {
     transform: scale(1.04);
     transition: all .3s;
 }
